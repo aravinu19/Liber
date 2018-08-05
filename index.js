@@ -15,6 +15,6 @@ app.use(function(req, res, next) {
 
 firestore(app);
 
-var beastEngine = app.listen(1548, () => {
+var beastEngine = app.listen(80, () => {
   console.log("Beast Engine is up and running on ", beastEngine.address().port);
 });
