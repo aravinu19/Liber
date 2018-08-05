@@ -1,4 +1,6 @@
 var admin = require("firebase-admin");
+var express = require('express');
+var fs = require('fs');
 
 var serviceAccount = require("./dbdemo.json");
 
@@ -35,6 +37,10 @@ var dbstore = function(app) {
     res.status(200).send({data:tempData.dump, status: 'Dont Know'});
 
   });
+
+  app.all("/", (req, res) => {
+    res.redirect("/liber/index.html")
+  })
 
 }
 

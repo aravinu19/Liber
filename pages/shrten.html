@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Shrten ! </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="shorten.js"></script>
+
+    <style>
+
+      .column{
+        margin: 0 auto;
+        top: 50%;
+
+      }
+
+      #short{
+        padding-top: 50px
+      }
+
+      #move{
+        padding: 50px
+      }
+
+      .footer {
+         position: fixed;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: #ffffe6;
+         color: white;
+         text-align: center;
+       }
+
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="jumbotron" align="center">
+
+        <h1> Shrten Url </h1>
+        <p> This a simple Url shortener powered by Adler32 and Base62 Algorithms to provide reliable mini URL's </p>
+
+      </div>
+
+      <div align="center">
+
+        <h3 id="short" class="text-dark">Shrten URL</h3>
+
+      <div class="column" align="center">
+          <div class="column" align="center">
+            <div class="col-lg-6" align="center">
+              <div class="input-group" id="short" align="center">
+                <input type="text" class="form-control" placeholder="Url to Shorten" id="userUrl">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" onclick="shrten()">Shrten!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="column" align="center">
+            <div class="col-lg-6" align="center">
+              <div class="input-group" id="short" align="center">
+                <span class="input-group-addon" id="sizing-addon1">Shrtened Url : </span>
+                <input type="text" class="form-control" id="shrtUrl">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="short" align="center">
+
+        <h3 id="short" id="move" class="text-dark">Get Original URL</h3>
+
+        <div class="column" align="center">
+            <div class="column" align="center">
+              <div class="col-lg-6" align="center">
+                <div class="input-group" id="short" align="center">
+                  <input type="text" class="form-control" placeholder="Url to redirect" id="userUrl2">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="geturl()">getURL!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="column" align="center">
+              <div class="col-lg-6" align="center">
+                <div class="input-group" id="short" align="center">
+                  <span class="input-group-addon" id="sizing-addon1">Original Url : </span>
+                  <input type="text" class="form-control" id="orginUrl">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" onclick="openurl()">Open!</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+
+          </div>
+        </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <footer class="footer">
+        <div class="container">
+            <span class="text-muted"> This a test site based on a project <a href="https://github.com/aravinu19/Url-Shortener"> Url-Shortener </a> in GitHub. <br> A site by ivara ! </span>
+        </div>
+      </footer>
+
+  </body>
+
+</html>

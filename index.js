@@ -6,6 +6,7 @@ var app = express();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
+app.use("/liber", express.static('pages'));
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
