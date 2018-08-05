@@ -38,7 +38,7 @@ var dbstore = function(app) {
 
   });
 
-  app.all("/", (req, res) => {
+  app.all("", (req, res) => {
     res.redirect("/liber/index.html")
   })
 
